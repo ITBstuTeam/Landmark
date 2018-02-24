@@ -1,8 +1,8 @@
-function initMap(la, ln) {
+function setMapMarkerByCoordinates(width, latitude) {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.898386, lng: 27.536495},
-        zoom: 12,
+        zoom: 16,
         styles: [
             {
                 "elementType": "geometry",
@@ -323,7 +323,11 @@ function initMap(la, ln) {
         ]
     });
 
+    width = parseFloat(width);
+    latitude = parseFloat(latitude);
     var marker = new google.maps.Marker({
-        position: {lat: la, lng: ln},
+        position: {lat: width, lng: latitude},
     });
+    marker.setMap(map);
+
 }

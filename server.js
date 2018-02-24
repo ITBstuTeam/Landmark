@@ -8,8 +8,7 @@ function setMapMarkerByID(inputID) {
 
             console.log(pole);
 
-            //TODO: get ID from HTML form
-
+            setMapMarkerByCoordinates(pole.width, pole.longitude);
         }
     };
     request.open("GET", "src/database.json", true);
