@@ -10,6 +10,19 @@
          url('fonts/calibri.svg#calibri') format('svg');
 }
 
+@font-face {
+font-family: 'Helvetica Neue Cyr Medium';
+src: url('HelveticaNeueCyr-Medium.eot');
+src: url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+url('HelveticaNeueCyr-Medium.woff') format('woff'),
+url('HelveticaNeueCyr-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.hel {
+	font-family: 'Helvetica Neue Cyr Medium';
+}
+
 /*========= Class of font-family ==========*/
 .calibri{
 	font-family: 'calibri';
@@ -33,12 +46,15 @@ ul.list-inline a {display: inline-block}
 
 
 body{
-	
+	.hel;
 	 height: 100%;
 	 width: 100%;
      padding-right: 0;
      margin-left: 0px;
-     margin-right: 0px; 
+     margin-right: 0px;
+ }
+.text_form{
+     font-size:6vmin; 
 }
 .row{
     margin-right: 0px;
@@ -54,6 +70,14 @@ nav{
 	background: -moz-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Fx 3.6-15*/
 	background: linear-gradient(top right, #0b0b3f, #0d0f2d); /*Standard*/
 	height: 80px;
+	font-size:6vmin;
+	li{
+		img{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			position: absolute;
+	      }
+	   }
 	
     }
 
