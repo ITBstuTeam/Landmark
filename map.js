@@ -1,7 +1,7 @@
-function initMap() {
+function initMap(la, ln) {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 40.674, lng: -73.945},
+        center: {lat: 53.898386, lng: 27.536495},
         zoom: 12,
         styles: [
             {
@@ -321,5 +321,9 @@ function initMap() {
                 ]
             }
         ]
+    });
+
+    var marker = new google.maps.Marker({
+        position: {lat: la, lng: ln},
     });
 }
