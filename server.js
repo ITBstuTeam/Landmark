@@ -12,6 +12,7 @@ function getPoleCoordinatesByID(inputID) {
             return pole;
         }
 
+
     };
     request.open("GET", "/src/database.json", true);
 
