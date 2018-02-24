@@ -10,9 +10,6 @@
     <!--SERVER MAINTENANCE-->
     <script type="text/javascript" src="server.js"></script>
 
-    <!--GOOGLE API -->
-    <script type="text/javascript" src="map.js"></script>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -33,13 +30,14 @@
             <ul class="list-inline">
                 <li class="col-md-1 col-sm-1 col-xs-1
           text-left">
-                    <a href="#contacts">
-                        <img src="img/logo.png" alt="logotype" class="img-responsive center-block">
-                    </a>
+                    <img src="img/logo.png" alt="logotype" class="img-responsive center-block">
+
                 </li>
                 <li class="col-md-2 col-sm-2 col-xs-2 col-sm-offset-9 col-xs-offset-9 col-md-offset-9 text-right">
-                    <h5><a href="#types">Информация
-                    </a></h5>
+                    <h5>
+                        <a href="#">Информация
+                        </a>
+                    </h5>
                 </li>
             </ul>
         </div>
@@ -50,19 +48,21 @@
 <section id="main">
     <div class="сontainer text-center">
         <div class="col-md-4 col-sm-4 col-xs-12 form_">
-            <div class="row">
-                <h1></h1>
-            </div>
-            <div class="row ">
-                <h3></h3>
-            </div>
-            <div class="row ">
-                <button></button>
-            </div>
+            <form name="inputForm" action="#" onsubmit="formSubmit();return false">
+                <div class="row">
+                    <h1>Введите Номер Столба</h1><br/>
+                    <label>
+                        <input type="text" name="name" class="inputform">
+                    </label>
+                </div>
+                <div class="row ">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-12 map_">
-           <iframe src="https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=53.89808485596066,27.545905762580773&zoom=18&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x1d2c4d&style=element:labels.text.fill%7Ccolor:0xb2b2b2&style=element:labels.text.stroke%7Ccolor:0x1a3646&style=feature:administrative%7Celement:geometry%7Cvisibility:off&style=feature:administrative.country%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0x64779e&style=feature:administrative.province%7Celement:geometry%7Cvisibility:on&style=feature:administrative.province%7Celement:geometry.stroke%7Ccolor:0x4b6878&style=feature:administrative.province%7Celement:labels.text%7Cvisibility:on&style=feature:administrative.province%7Celement:labels.text.fill%7Ccolor:0x4b6878%7Cvisibility:on&style=feature:landscape.man_made%7Celement:geometry.stroke%7Ccolor:0x334e87&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0x023e58&style=feature:landscape.natural%7Celement:geometry.stroke%7Cvisibility:on&style=feature:poi%7Cvisibility:off&style=feature:poi%7Celement:geometry%7Ccolor:0x283d6a&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x6f9ba5&style=feature:poi%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xf1e445&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x3C7680&style=feature:road%7Celement:geometry%7Ccolor:0x304a7d&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:road%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:road.highway%7Celement:geometry%7Ccolor:0x8a8798%7Cvisibility:on&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x255763&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xb0d5ce&style=feature:road.highway%7Celement:labels.text.stroke%7Ccolor:0x023e58&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x98a5be&style=feature:transit%7Celement:labels.text.stroke%7Ccolor:0x1d2c4d&style=feature:transit.line%7Celement:geometry.fill%7Ccolor:0x283d6a&style=feature:transit.station%7Celement:geometry%7Ccolor:0x3a4762&style=feature:water%7Celement:geometry%7Ccolor:0x014f8d&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x4e6d70&size=480x360" width="100%" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9407.649260632761!2d27.5438749!3d53.8799868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1519481571416"
+                    width="100%" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
 
             <div class="row">
                 <h1></h1>
@@ -78,7 +78,7 @@
 </section>
 
 
-<footer>
+<footer id="contacts">
     <div class="container">
     </div>
 </footer>
@@ -116,9 +116,6 @@
             $("html").niceScroll({cursorcolor: "#000"});
         }
     );
-    $.getJSON('/mydata.json').success(function(json){
-    console.log(json); // тут Object {text: 'text', id: 2 ....}
-});
 </script>
 </body>
 </html>
