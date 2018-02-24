@@ -44,6 +44,18 @@ button:visited,
 
 ul.list-inline a {display: inline-block}
 
+  * {
+  margin: 0;
+  padding: 0;
+}
+html,
+{
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
 
 body{
 	.hel;
@@ -80,11 +92,55 @@ nav{
 	   }
 	
     }
+    #main{
+  position: relative;
+  min-height: 720px;
+   h1{
+
+			padding-top: 30%;
+			padding-bottom: 10%;
+
+     }
+    }
+
+    #map {
+  position: relative;
+  min-height: 720px;
+   }
+
+  #contacts {
+
+    height: 40px;
+  	background: #0b0b3f; /* Old Browsers */
+	background: -webkit-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Fx 3.6-15*/
+	background: linear-gradient(top right, #0b0b3f, #0d0f2d); /*Standard*/
+  }  
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
 
 /*============    	АДАПТИВ    ===========*/
 
 @media(min-width:0px) and (max-width:320px) {
-	
+	nav{
+    height: 30px;
+	}
+	#main{
+    height: 230px;
+    }
+    #map {
+    height: 230px;
+    }
+     #contacts {
+    height: 10px;
+    }
 }
 
 @media(min-width:321px) and (max-width:480px) {
