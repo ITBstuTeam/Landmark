@@ -1,34 +1,184 @@
 {
-  "poles":[
-    {"id":"1", "width":"53.898386", "longitude":"27.536495", "status":"true"},
-    {"id":"2", "width":"53.898608", "longitude":"27.536297", "status":"true"},
-    {"id":"3", "width":"53.898680", "longitude":"27.536237", "status":"true"},
-    {"id":"4", "width":"53.898765", "longitude":"27.536177", "status":"true"},
-    {"id":"5", "width":"53.898840", "longitude":"27.536111", "status":"true"},
-    {"id":"6", "width":"53.898921", "longitude":"27.536046", "status":"true"},
-    {"id":"7", "width":"53.899009", "longitude":"27.535980", "status":"true"},
-    {"id":"8", "width":"53.899096", "longitude":"27.535904", "status":"true"},
-    {"id":"9", "width":"53.899190", "longitude":"27.535817", "status":"true"},
-    {"id":"10", "width":"53.899250", "longitude":"27.535773", "status":"true"},
-    {"id":"11", "width":"53.899346", "longitude":"27.535696", "status":"true"},
-    {"id":"12", "width":"53.899437", "longitude":"27.535615", "status":"true"},
-    {"id":"13", "width":"53.899546", "longitude":"27.535523", "status":"true"},
-    {"id":"14", "width":"53.899635", "longitude":"27.535482", "status":"true"},
-    {"id":"15", "width":"53.899737", "longitude":"27.535394", "status":"true"},
-    {"id":"16", "width":"53.899841", "longitude":"27.535329", "status":"true"},
-    {"id":"17", "width":"53.899933", "longitude":"27.535241", "status":"true"},
-    {"id":"18", "width":"53.900024", "longitude":"27.535159", "status":"true"},
-    {"id":"19", "width":"53.900112", "longitude":"27.535093", "status":"true"},
-    {"id":"20", "width":"53.900203", "longitude":"27.535021", "status":"true"},
-    {"id":"21", "width":"53.900317", "longitude":"27.534955", "status":"true"},
-    {"id":"22", "width":"53.900421", "longitude":"27.534873", "status":"true"},
-    {"id":"23", "width":"53.900516", "longitude":"27.534813", "status":"true"},
-    {"id":"24", "width":"53.900626", "longitude":"27.534731", "status":"true"},
-    {"id":"25", "width":"53.900717", "longitude":"27.534676", "status":"true"},
-    {"id":"26", "width":"53.900788", "longitude":"27.534610", "status":"true"},
-    {"id":"27", "width":"53.900876", "longitude":"27.534555", "status":"true"},
-    {"id":"28", "width":"53.900967", "longitude":"27.534501", "status":"true"},
-    {"id":"29", "width":"53.901071", "longitude":"27.534424", "status":"true"},
-    {"id":"30", "width":"53.901169", "longitude":"27.534390", "status":"true"}
+  "poles": [
+    {
+      "id": "1",
+      "width": "53.898386",
+      "longitude": "27.536495",
+      "status": "true"
+    },
+    {
+      "id": "2",
+      "width": "53.898608",
+      "longitude": "27.536297",
+      "status": "true"
+    },
+    {
+      "id": "3",
+      "width": "53.898680",
+      "longitude": "27.536237",
+      "status": "true"
+    },
+    {
+      "id": "4",
+      "width": "53.898765",
+      "longitude": "27.536177",
+      "status": "true"
+    },
+    {
+      "id": "5",
+      "width": "53.898840",
+      "longitude": "27.536111",
+      "status": "true"
+    },
+    {
+      "id": "6",
+      "width": "53.898921",
+      "longitude": "27.536046",
+      "status": "true"
+    },
+    {
+      "id": "7",
+      "width": "53.899009",
+      "longitude": "27.535980",
+      "status": "true"
+    },
+    {
+      "id": "8",
+      "width": "53.899096",
+      "longitude": "27.535904",
+      "status": "true"
+    },
+    {
+      "id": "9",
+      "width": "53.899190",
+      "longitude": "27.535817",
+      "status": "true"
+    },
+    {
+      "id": "10",
+      "width": "53.899250",
+      "longitude": "27.535773",
+      "status": "true"
+    },
+    {
+      "id": "11",
+      "width": "53.899346",
+      "longitude": "27.535696",
+      "status": "true"
+    },
+    {
+      "id": "12",
+      "width": "53.899437",
+      "longitude": "27.535615",
+      "status": "true"
+    },
+    {
+      "id": "13",
+      "width": "53.899546",
+      "longitude": "27.535523",
+      "status": "true"
+    },
+    {
+      "id": "14",
+      "width": "53.899635",
+      "longitude": "27.535482",
+      "status": "true"
+    },
+    {
+      "id": "15",
+      "width": "53.899737",
+      "longitude": "27.535394",
+      "status": "true"
+    },
+    {
+      "id": "16",
+      "width": "53.899841",
+      "longitude": "27.535329",
+      "status": "true"
+    },
+    {
+      "id": "17",
+      "width": "53.899933",
+      "longitude": "27.535241",
+      "status": "true"
+    },
+    {
+      "id": "18",
+      "width": "53.900024",
+      "longitude": "27.535159",
+      "status": "true"
+    },
+    {
+      "id": "19",
+      "width": "53.900112",
+      "longitude": "27.535093",
+      "status": "true"
+    },
+    {
+      "id": "20",
+      "width": "53.900203",
+      "longitude": "27.535021",
+      "status": "true"
+    },
+    {
+      "id": "21",
+      "width": "53.900317",
+      "longitude": "27.534955",
+      "status": "true"
+    },
+    {
+      "id": "22",
+      "width": "53.900421",
+      "longitude": "27.534873",
+      "status": "true"
+    },
+    {
+      "id": "23",
+      "width": "53.900516",
+      "longitude": "27.534813",
+      "status": "true"
+    },
+    {
+      "id": "24",
+      "width": "53.900626",
+      "longitude": "27.534731",
+      "status": "true"
+    },
+    {
+      "id": "25",
+      "width": "53.900717",
+      "longitude": "27.534676",
+      "status": "true"
+    },
+    {
+      "id": "26",
+      "width": "53.900788",
+      "longitude": "27.534610",
+      "status": "true"
+    },
+    {
+      "id": "27",
+      "width": "53.900876",
+      "longitude": "27.534555",
+      "status": "true"
+    },
+    {
+      "id": "28",
+      "width": "53.900967",
+      "longitude": "27.534501",
+      "status": "true"
+    },
+    {
+      "id": "29",
+      "width": "53.901071",
+      "longitude": "27.534424",
+      "status": "true"
+    },
+    {
+      "id": "30",
+      "width": "53.901169",
+      "longitude": "27.534390",
+      "status": "true"
+    }
   ]
 }
