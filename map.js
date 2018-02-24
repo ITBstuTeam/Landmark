@@ -329,5 +329,13 @@ function setMapMarkerByCoordinates(width, latitude) {
         position: {lat: width, lng: latitude},
     });
     marker.setMap(map);
+}
 
+function setMapMarkerAll(width, latitude) {
+    var markerArr = [];
+    markerArr.push(new google.maps.Marker({
+      position: {lat: width, lng: latitude}
+    })
+    );
+    markerArr.setMap(map);
 }
