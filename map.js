@@ -1,6 +1,6 @@
 function setMapMarkerByCoordinates(width, latitude) {
     // Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
+    let map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.898386, lng: 27.536495},
         zoom: 16,
         styles: [
@@ -325,17 +325,18 @@ function setMapMarkerByCoordinates(width, latitude) {
 
     width = parseFloat(width);
     latitude = parseFloat(latitude);
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
         position: {lat: width, lng: latitude},
     });
     marker.setMap(map);
 }
 
-function setMapMarkerAll(width, latitude) {
-    var markerArr = [];
-    markerArr.push(new google.maps.Marker({
+function setMapMarkersNoRedraw(width, latitude) {
+    let markers = [];
+    markers.push(new google.maps.Marker({
       position: {lat: width, lng: latitude}
     })
     );
-    markerArr.setMap(map);
+    console.log(markers);
+    markers[markers.length - 1].setMap(map);
 }

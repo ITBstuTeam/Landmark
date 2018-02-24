@@ -1,3 +1,27 @@
+function drawInitMapMarkers() {
+    let request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            let data = JSON.parse(request.responseText);
+
+            while (true) {
+                try {
+                    console.log("HERE");
+
+                    let pole = data.poles[inputID - 1];
+                    console.log(pole);
+                    setMapMarkersNoRedraw(pole.width, pole.longitude);
+                } catch (err) {
+                    break;
+                }
+            }
+
+        }
+    };
+    request.open("GET", "src/database.json", true);
+    request.send();
+}
+
 function setMapMarkerByID(inputID) {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -26,3 +50,6 @@ function formSubmit() {
         setMapMarkerByID(inputID);
     }
 }
+
+//runs at page loading
+drawInitMapMarkers();
