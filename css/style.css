@@ -29,6 +29,8 @@ ul.list-inline a {
 }
 
 body {
+    background-color: #e9f5ff;
+
     font-family: 'Helvetica Neue Cyr Medium';
     height: 100%;
     width: 100%;
