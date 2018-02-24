@@ -47,6 +47,7 @@ ul.list-inline a {display: inline-block}
   * {
   margin: 0;
   padding: 0;
+  outline: 0 !important;
 }
 html,
 {
@@ -106,13 +107,67 @@ nav{
     #main{
   position: relative;
   min-height: 730px;
-   h1{
+  form {
+     h1{
 
-			padding-top: 30%;
-			padding-bottom: 10%;
+      padding-top: 30%;
+      padding-bottom: 5%;
 
      }
+     input[name ="name"]{
+      outline: none;
+
+      .hel;
+      border-radius: 7px;
+      background-color: #f8f9fd;
+      color: #434343;
+      font-size: 3vmin;
+      width: 300px;
+      height: 40px;
+      border: solid 1px #dddee2;
+      opacity: 0.5;
+      &:hover, 
+      &:focus{
+        opacity: 1;
+      }
+     }
+     input[type="submit"]{
+      margin: 5%;
+      background-color: #32d385;
+      border-radius: 15px;
+      padding-top: 12px; 
+      padding-bottom: 12px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border: solid 1px #32d385;
+      font-size: 2vmin; 
+      color: #fff;
+       opacity: 0.8;
+      &:hover, 
+      &:focus{
+        opacity: 1;
+      }
+     }
     }
+  
+    }
+ 
+    #map::after {
+background: transparent;
+background: -moz-linear-gradient(top, rgba(0, 50, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+background: -webkit-linear-gradient(top, rgba(0, 50, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+background: -o-linear-gradient(top, rgba(0, 50, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+background: -ms-linear-gradient(top, rgba(0, 50, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(to bottom, rgba(0, 50, 40, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+content: "";
+display: block;
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
 
     #map {
   position: relative;
