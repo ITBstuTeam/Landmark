@@ -47,10 +47,12 @@
 <section id="main">
     <div class="сontainer text-center">
         <div class="col-md-4 col-sm-4 col-xs-12 form_">
-            <form name="inputForm" onsubmit="return formSubmit()">
+            <form name="inputForm" action="#" onsubmit="formSubmit();return false">
                 <div class="row">
                     <h1>Введите Номер Столба</h1><br/>
-                    <input type="text" name="name" class="inputform">
+                    <label>
+                        <input type="text" name="name" class="inputform">
+                    </label>
                 </div>
                 <div class="row ">
                     <input type="submit" value="Submit">
