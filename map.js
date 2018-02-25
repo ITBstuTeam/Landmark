@@ -1,4 +1,10 @@
 function setMapMarkerByCoordinates(width, longitude, id) {
+    let image = {
+        url: 'img/map-marker.png',
+        scaledSize: new google.maps.Size(45, 60),
+        origin: new google.maps.Point(0,0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
     let map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.898386, lng: 27.536495},
         zoom: 16,
@@ -208,9 +214,10 @@ function setMapMarkerByCoordinates(width, longitude, id) {
     longitude = parseFloat(longitude);
     let marker = new google.maps.Marker({
         position: {lat: width, lng: longitude},
+        icon: image
     });
 
-     marker.setMap(map);x
+     marker.setMap(map);
 
     let contentString = '<div id="content"><p>' + 'Каардынаты: ' + width + ', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
     let infowindow = new google.maps.InfoWindow({
