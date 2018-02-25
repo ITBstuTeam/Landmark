@@ -210,7 +210,7 @@ function setMapMarkerByCoordinates(width, longitude, id) {
         position: {lat: width, lng: longitude},
     });
 
-     marker.setMap(map);
+     marker.setMap(map);x
 
     let contentString = '<div id="content"><p>' + 'Каардынаты: ' + width + ', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
     let infowindow = new google.maps.InfoWindow({
