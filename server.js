@@ -6,7 +6,9 @@ function setMapMarkerByID(inputID) {
             let data = JSON.parse(request.responseText);
             let pole = data.poles[inputID - 1];
 
-            setMapMarkerByCoordinates(pole.width, pole.longitude, pole.id);
+            if (inputID <= data.poles.length) {
+                setMapMarkerByCoordinates(pole.width, pole.longitude, pole.id);
+            }
         }
     };
     request.open("GET", "src/database.json", true);
@@ -17,7 +19,6 @@ function formSubmit() {
     let formInput = document.forms["inputForm"]["name"].value;
 
     if (formInput > 0 && formInput < 1000000) {
-
         let inputID = parseInt(formInput);
 
         setMapMarkerByID(inputID);
