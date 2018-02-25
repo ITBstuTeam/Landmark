@@ -6,7 +6,7 @@ function setMapMarkerByID(inputID) {
             let data = JSON.parse(request.responseText);
             let pole = data.poles[inputID - 1];
 
-            setMapMarkerByCoordinates(pole.width, pole.longitude);
+            setMapMarkerByCoordinates(pole.width, pole.longitude, pole.id);
         }
     };
     request.open("GET", "src/database.json", true);
