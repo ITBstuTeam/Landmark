@@ -28,11 +28,21 @@
     <![endif]-->
 </head>
 <body>
+
+
+<div class="loaderArea">
+   <div class="loader">
+   </div>
+</div>
+
+
 <!--GOOGLE API SCRIPT-->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbib9a2QEosgy-80z1SG069VnFKSRVDko&callback=setMapMarkerByCoordinates">
 </script>
+
 <div class="wrapper">
+
 <nav>
     <div class="container">
         <div class="row">
@@ -40,7 +50,6 @@
                 <li class="col-md-1 col-sm-1 col-xs-1
           text-left">
                     <img src="img/logo.png" alt="logotype" class="img-responsive center-block">
-
                 </li>
                 <li class="col-md-2 col-sm-2 col-xs-2 col-sm-offset-9 col-xs-offset-9 col-md-offset-9 text-right">
                     <h5>
@@ -76,9 +85,12 @@
 
 
 <footer id="contacts">
-    <div class="container">
+    <div class="container text-center">
+          <p>Проект разработан студентами Белоруского государтвенного технологического университета  2018 год
+          </p>
     </div>
 </footer>
+
 </div>
 
 <!-- Modal -->
@@ -91,7 +103,6 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-
                 </div>
             </div>
         </div>
@@ -113,6 +124,14 @@
             $("html").niceScroll({cursorcolor: "#000"});
         }
     );
+</script>
+<script>
+  $(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
 </script>
 </body>
 </html>
