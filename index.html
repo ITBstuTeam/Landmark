@@ -20,6 +20,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
+<!-- Check input validation and shows ErrorMessage  -->
+<script ltype="text/javascript">
+
+function validateForm()
+{
+var x=document.forms["inputForm"]["name"].value;
+if (x==null || x=="")
+  {
+  alert("Номер столба должен быть обязательно введен");
+  return false;
+  }
+}
+</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -66,15 +79,15 @@
 <section id="main">
     <div class="сontainer text-center">
         <div class="col-md-4 col-sm-4 col-xs-12 form_">
-            <form name="inputForm" action="#" onsubmit="formSubmit();return false">
+            <form name="inputForm" action="#" onsubmit="return validateForm(); formSubmit();return false">
                 <div class="row">
                     <h1>Введите Номер Столба</h1><br/>
                     <label>
-                        <input type="text" name="name" class="inputform text-center">
+                        <input type="text" onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" name="name"  class="inputform text-center">
                     </label>
                 </div>
                 <div class="row ">
-                    <input type="submit" value="Submit" required placeholder="Найти"> 
+                    <input type="submit" value="Submit" onClick="test1(this.form)" required placeholder="Найти"> 
                 </div>
             </form>
 
@@ -133,5 +146,6 @@
     $preloader.delay(350).fadeOut('slow');
   });
 </script>
+
 </body>
 </html>
