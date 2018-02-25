@@ -4,6 +4,52 @@
 /*========= Class of font-family ==========*/
 
 
+/@font-face {
+    font-family: 'HelveticaNeueCyrMediumItalic';
+    src: url('fonts/HelveticaNeueCyrMediumItalic.eot');
+    src: url('fonts/HelveticaNeueCyrMediumItalic.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueCyrMediumItalic.woff2') format('woff2'),
+         url('fonts/HelveticaNeueCyrMediumItalic.woff') format('woff'),
+         url('fonts/HelveticaNeueCyrMediumItalic.ttf') format('truetype'),
+         url('fonts/HelveticaNeueCyrMediumItalic.svg#HelveticaNeueCyrMediumItalic') format('svg');
+}
+
+@font-face {
+    font-family: '9202';
+    src: url('fonts/9202.eot');
+    src: url('fonts/9202.eot') format('embedded-opentype'),
+         url('fonts/9202.woff2') format('woff2'),
+         url('fonts/9202.woff') format('woff'),
+         url('fonts/9202.ttf') format('truetype'),
+         url('fonts/9202.svg#9202') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaThin';
+    src: url('fonts/HelveticaThin.eot');
+    src: url('fonts/HelveticaThin.eot') format('embedded-opentype'),
+         url('fonts/HelveticaThin.woff2') format('woff2'),
+         url('fonts/HelveticaThin.woff') format('woff'),
+         url('fonts/HelveticaThin.ttf') format('truetype'),
+         url('fonts/HelveticaThin.svg#HelveticaThin') format('svg');
+}
+
+
+.HelveticaThin{
+   font-family: 'HelveticaThin';
+}
+
+.f{
+    font-family: '9202';
+
+}
+
+.Helve{
+    font-family: 'HelveticaNeueCyrMediumItalic';
+}
+/*========= Class of font-family ==========*/
+
+
 /*========= Link ==========*/
 a:hover,
 a:focus,
@@ -14,7 +60,7 @@ button:focus,
 button:active,
 button:visited,
 {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*========= load ==========*/
@@ -70,6 +116,7 @@ button:visited,
     width: 100%;
     height: 100%;
   }
+
 }
 
 /*=====================================*/
@@ -93,8 +140,8 @@ html,
 }
 
 body{
-	 height: 100%;
-	 width: 100%;
+   height: 100%;
+   width: 100%;
      padding-right: 0;
      margin-left: 0px;
      margin-right: 0px;
@@ -108,27 +155,28 @@ body{
 }
 
 nav{
-	
+  .HelveticaThin;
+  letter-spacing: 2px;
+  text-transform: uppercase;;
     height: 80px;
-	background: #0b0b3f; /* Old Browsers */
-	background: -webkit-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Safari 5.1-6*/
-	background: -o-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Opera 11.1-12*/
-	background: -moz-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Fx 3.6-15*/
-	background: linear-gradient(top right, #0b0b3f, #0d0f2d); /*Standard*/
-	height: 80px;
-	font-size:6vmin;
-	li{
-		img{
-			padding-top: 5px;
-			padding-bottom: 5px;
-			position: absolute;
+  background: #0b0b3f; /* Old Browsers */
+  background: -webkit-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Safari 5.1-6*/
+  background: -o-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top right,#0b0b3f,#0d0f2d); /*Fx 3.6-15*/
+  background: linear-gradient(top right, #0b0b3f, #0d0f2d); /*Standard*/
+  height: 70px;
+  li{
+    img{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      position: absolute;
 
-	      }
-	   }
-	h5{
+        }
+     }
+  h5{
 
       padding-top: 20px;
-      font-size:2vmin;
+      font-size:1.5vmin;
       a{
       color: #fff;
     }
@@ -139,6 +187,7 @@ nav{
   }
     }
     #main{
+  .HelveticaThin;
   position: relative;
   min-height: 730px;
   form {
@@ -182,7 +231,7 @@ nav{
   
     }
  
-    #map::after {
+   /*== #map::after {
 background: transparent;
 background: -moz-linear-gradient(top, rgba(0, 50, 40, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.1)));
@@ -197,7 +246,7 @@ left: 0;
 position: absolute;
 top: 0;
 width: 100%;
-}
+} ==*/
 
 
 
@@ -207,14 +256,15 @@ width: 100%;
    }
 
   #contacts {
+  .HelveticaThin;
      font-size: 1.5vmin; 
     color: #a3a3a3;
     height: 20px;
-  	background: #131313; /* Old Browsers */
-  	background: -webkit-linear-gradient(top right,#131313,#1d1e20); /*Safari 5.1-6*/
-  	background: -o-linear-gradient(top right,#131313,#1d1e20); /*Opera 11.1-12*/
-  	background: -moz-linear-gradient(top right,#131313,#1d1e20); /*Fx 3.6-15*/
-  	background: linear-gradient(top right, #131313, #1d1e20); /*Standard*/
+    background: #131313; /* Old Browsers */
+    background: -webkit-linear-gradient(top right,#131313,#1d1e20); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top right,#131313,#1d1e20); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top right,#131313,#1d1e20); /*Fx 3.6-15*/
+    background: linear-gradient(top right, #131313, #1d1e20); /*Standard*/
   }  
 footer {
   position: absolute;
@@ -229,13 +279,13 @@ footer {
 }
 
 
-/*============    	АДАПТИВ    ===========*/
+/*============      АДАПТИВ    ===========*/
 
 @media(min-width:0px) and (max-width:320px) {
-	nav{
+  nav{
     height: 30px;
-	}
-	#main{
+  }
+  #main{
     height: 230px;
     }
     #map {
@@ -247,18 +297,18 @@ footer {
 }
 
 @media(min-width:321px) and (max-width:480px) {
-	
+  
 }
 
 @media(min-width:481px) and (max-width:768px) {
-	
+  
 }
 
 @media(min-width:769px) and (max-width:992px) {
-	
+  
 }
 
 @media(min-width:993px) and (max-width:1200px) {
-	
+  
 }
 
