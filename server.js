@@ -3,17 +3,10 @@ function drawInitMapMarkers() {
     request.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             let data = JSON.parse(request.responseText);
-
-            while (true) {
-                try {
-                    console.log("HERE");
-
-                    let pole = data.poles[inputID - 1];
-                    console.log(pole);
-                    setMapMarkersNoRedraw(pole.width, pole.longitude);
-                } catch (err) {
-                    break;
-                }
+            console.log(data.poles.length);
+            for (let index of data.poles) {
+                // setMapMarkersNoRedraw(index.width, index.longitude);
+                // console.log(index);
             }
 
         }
@@ -30,7 +23,7 @@ function setMapMarkerByID(inputID) {
             let data = JSON.parse(request.responseText);
             let pole = data.poles[inputID - 1];
 
-            console.log(pole);
+            // console.log(pole);
 
             setMapMarkerByCoordinates(pole.width, pole.longitude);
         }
