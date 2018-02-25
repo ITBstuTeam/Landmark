@@ -212,12 +212,12 @@ function setMapMarkerByCoordinates(width, longitude, id) {
 
     marker.setMap(map);
 
-    var contentString = '<div id="content"> <p>' + 'Каардынаты: '+ width +', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
-    var infowindow = new google.maps.InfoWindow({
+    let contentString = '<div id="content"><p>' + 'Каардынаты: ' + width + ', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
+    let infowindow = new google.maps.InfoWindow({
         content: contentString
     });
 
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
     });
 }

@@ -13,7 +13,6 @@ function setMapMarkerByID(inputID) {
     request.send();
 }
 
-
 function formSubmit() {
     let formInput = document.forms["inputForm"]["name"].value;
 
