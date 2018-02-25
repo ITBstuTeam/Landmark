@@ -22,15 +22,6 @@
 
 <!-- Check input validation and shows ErrorMessage  -->
 <script ltype="text/javascript">
-function validateNumbers()
-{
-var y=document.forms["inputForm"]["name"].value;
-if (y > 1000000)
-{
-  alert("Превышен диапазон номеров");
-  return false;
-}
-}
 
 function validateForm()
 {
@@ -40,6 +31,11 @@ if (x==null || x=="")
   alert("Номер столба должен быть обязательно введен");
   return false;
   }
+else if (x > 1000000)
+{
+  alert("Превышен диапазон номеров");
+  return false;
+}
 }
 </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -88,7 +84,7 @@ if (x==null || x=="")
 <section id="main">
     <div class="сontainer text-center">
         <div class="col-md-4 col-sm-4 col-xs-12 form_">
-            <form name="inputForm" action="#" onsubmit="return validateNumbers(); return validateForm(); formSubmit();return false">
+            <form name="inputForm" action="#" onsubmit="return validateForm(); formSubmit();return false">
                 <div class="row">
                     <h1>Введите Номер Столба</h1><br/>
                     <label>
