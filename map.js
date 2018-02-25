@@ -1,7 +1,7 @@
 function setMapMarkerByCoordinates(width, longitude, id) {
     let map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.898386, lng: 27.536495},
-        zoom: 14,
+        zoom: 16,
         styles: [
 
             {
