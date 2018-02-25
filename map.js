@@ -212,7 +212,7 @@ function setMapMarkerByCoordinates(width, longitude, id) {
 
     marker.setMap(map);
 
-    var contentString = '<div id="content"> <p>' + 'Каардынаты: '+ width +', ' + longitude + '</p>' + '<p>' + 'ID: ' + 'id' + '</div>';
+    var contentString = '<div id="content"> <p>' + 'Каардынаты: '+ width +', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });
