@@ -208,10 +208,9 @@ function setMapMarkerByCoordinates(width, longitude, id) {
     longitude = parseFloat(longitude);
     let marker = new google.maps.Marker({
         position: {lat: width, lng: longitude},
-        center: {lat: width, lng: longitude}
     });
 
-    marker.setMap(map);
+     marker.setMap(map);
 
     let contentString = '<div id="content"><p>' + 'Каардынаты: ' + width + ', ' + longitude + '</p>' + '<p>' + 'ID: ' + id + '</div>';
     let infowindow = new google.maps.InfoWindow({
