@@ -216,6 +216,8 @@ function setMapMarkerByCoordinates(width, latitude) {
 
 function setMapMarkersNoRedraw(width, latitude) {
     let markers = [];
+    width = parseFloat(width);
+    latitude = parseFloat(latitude);
     markers.push(new google.maps.Marker({
       position: {lat: width, lng: latitude}
     })
