@@ -1,1 +1,150 @@
-@font-face{font-family:HelveticaNeueCyrMediumItalic;src:url(fonts/HelveticaNeueCyrMediumItalic.eot);src:url(fonts/HelveticaNeueCyrMediumItalic.eot) format('embedded-opentype'),url(fonts/HelveticaNeueCyrMediumItalic.woff2) format('woff2'),url(fonts/HelveticaNeueCyrMediumItalic.woff) format('woff'),url(fonts/HelveticaNeueCyrMediumItalic.ttf) format('truetype'),url(fonts/HelveticaNeueCyrMediumItalic.svg#HelveticaNeueCyrMediumItalic) format('svg')}@font-face{font-family:'9202';src:url(fonts/9202.eot);src:url(fonts/9202.eot) format('embedded-opentype'),url(fonts/9202.woff2) format('woff2'),url(fonts/9202.woff) format('woff'),url(fonts/9202.ttf) format('truetype'),url(fonts/9202.svg#9202) format('svg')}@font-face{font-family:HelveticaThin;src:url(fonts/HelveticaThin.eot);src:url(fonts/HelveticaThin.eot) format('embedded-opentype'),url(fonts/HelveticaThin.woff2) format('woff2'),url(fonts/HelveticaThin.woff) format('woff'),url(fonts/HelveticaThin.ttf) format('truetype'),url(fonts/HelveticaThin.svg#HelveticaThin) format('svg')}.HelveticaThin{font-family:HelveticaThin}.f{font-family:'9202'}.Helve,.main-title{font-family:HelveticaNeueCyrMediumItalic}.main-title .thin{font-family:HelveticaThin}a:active,a:focus,a:hover,a:visited,button:active,button:focus,button:hover,button:visited{text-decoration:none}*{margin:0;padding:0;outline:0!important}html{height:100%}body{height:100%;width:100%;padding-right:0;margin-left:0;margin-right:0}.text_form{font-size:6vmin}.row{margin-right:0;margin-left:0}nav{font-family:HelveticaThin;letter-spacing:2px;text-transform:uppercase;height:80px;background:#333}nav h5{padding-top:20px;font-size:2vmin}nav h5 a,nav h5 a:hover{color:#fff}.img-responsive2{margin-top:5%;margin-left:20%;padding-top:10px;padding-bottom:10px;height:65px;width:auto}#main{font-family:HelveticaThin;position:fixed;width:100vw;height:100vh}#main .form_{z-index:10;height:100vh;box-shadow:1px 1px 23px 0 rgba(0,0,0,.6)}#main form{margin-top:50%}#main form h1{padding-top:30%;padding-bottom:5%}#main form input[name=name]{font-family:'9202';outline:0;background-color:#eee;color:#333;font-size:3vmin;width:150px;height:40px;border:1px solid #f8f9fd}#main form input[name=name]:focus,#main form input[name=name]:hover{border:1px solid #22a5ad}#main form input[type=submit]{font-family:'9202';text-transform:uppercase;letter-spacing:1px;margin:8%;background-color:#22a5ad;border-radius:25px;padding:10px 30px;border:1px solid #22a5ad;font-size:1.7vmin;color:#fff;opacity:.5}#main form input[type=submit]:focus,#main form input[type=submit]:hover{opacity:1}#map{position:fixed;height:100vh}
+@font-face {
+    font-family: HelveticaNeueCyrMediumItalic;
+    src: url(fonts/HelveticaNeueCyrMediumItalic.eot);
+    src: url(fonts/HelveticaNeueCyrMediumItalic.eot) format('embedded-opentype'), url(fonts/HelveticaNeueCyrMediumItalic.woff2) format('woff2'), url(fonts/HelveticaNeueCyrMediumItalic.woff) format('woff'), url(fonts/HelveticaNeueCyrMediumItalic.ttf) format('truetype'), url(fonts/HelveticaNeueCyrMediumItalic.svg#HelveticaNeueCyrMediumItalic) format('svg')
+}
+
+@font-face {
+    font-family: '9202';
+    src: url(fonts/9202.eot);
+    src: url(fonts/9202.eot) format('embedded-opentype'), url(fonts/9202.woff2) format('woff2'), url(fonts/9202.woff) format('woff'), url(fonts/9202.ttf) format('truetype'), url(fonts/9202.svg#9202) format('svg')
+}
+
+@font-face {
+    font-family: HelveticaThin;
+    src: url(fonts/HelveticaThin.eot);
+    src: url(fonts/HelveticaThin.eot) format('embedded-opentype'), url(fonts/HelveticaThin.woff2) format('woff2'), url(fonts/HelveticaThin.woff) format('woff'), url(fonts/HelveticaThin.ttf) format('truetype'), url(fonts/HelveticaThin.svg#HelveticaThin) format('svg')
+}
+
+.HelveticaThin {
+    font-family: HelveticaThin
+}
+
+.f {
+    font-family: '9202'
+}
+
+.Helve, .main-title {
+    font-family: HelveticaNeueCyrMediumItalic
+}
+
+.main-title .thin {
+    font-family: HelveticaThin
+}
+
+a:active, a:focus, a:hover, a:visited, button:active, button:focus, button:hover, button:visited {
+    text-decoration: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important
+}
+
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.text_form {
+    font-size: 6vmin
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0
+}
+
+nav {
+    font-family: HelveticaThin;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    height: 80px;
+    background: #333
+}
+
+nav h5 {
+    padding-top: 20px;
+    font-size: 2vmin
+}
+
+nav h5 a, nav h5 a:hover {
+    color: #fff
+}
+
+.img-responsive2 {
+    margin-top: 5%;
+    margin-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 65px;
+    width: auto
+}
+
+#main {
+    font-family: HelveticaThin;
+    position: fixed;
+    width: 100vw;
+    height: 100vh
+}
+
+#main .form_ {
+    z-index: 10;
+    height: 100vh;
+    box-shadow: 1px 1px 23px 0 rgba(0, 0, 0, .6)
+}
+
+#main form {
+    margin-top: 50%
+}
+
+#main form h1 {
+    padding-top: 30%;
+    padding-bottom: 5%
+}
+
+#main form input[name=name] {
+    font-family: '9202';
+    outline: 0;
+    background-color: #eee;
+    color: #333;
+    font-size: 3vmin;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f8f9fd
+}
+
+#main form input[name=name]:focus, #main form input[name=name]:hover {
+    border: 1px solid #22a5ad
+}
+
+#main form input[type=submit] {
+    font-family: '9202';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 8%;
+    background-color: #22a5ad;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: 1px solid #22a5ad;
+    font-size: 1.7vmin;
+    color: #fff;
+    opacity: .5
+}
+
+#main form input[type=submit]:focus, #main form input[type=submit]:hover {
+    opacity: 1
+}
+
+#map {
+    position: fixed;
+    height: 100vh
+}
