@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" href="img/icon.ico" sizes="16x16">
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Слуп</title>
+    <title>Слуп.by</title>
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
 
     <!--SERVER MAINTENANCE-->
     <script type="text/javascript" src="server.js"></script>
@@ -29,32 +32,38 @@
 </head>
 <body>
 
-<div class="loaderArea">
-    <div class="loader">
-    </div>
-</div>
-
 <!--GOOGLE API SCRIPT-->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbib9a2QEosgy-80z1SG069VnFKSRVDko&callback=setMapMarkerByCoordinates">
 </script>
 
-<div class="wrapper">
+
+<div class="demo-1">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">
+                    <img src="img/logo2.png" alt="logotype" class="img-responsive1 center-block"></h1>
+                </div>
+            </div>
+</div>
+
 
     <nav>
-        <div class="container">
-            <div class="row">
-                <ul class="list-inline">
-                    <li class="col-md-2 col-sm-2 col-xs-2 col-sm-offset-10 col-xs-offset-10 col-md-offset-10 text-right">
-                        <h5>
-                            <a href="#">Інфармацыя
-                            </a>
-                        </h5>
-                    </li>
-                </ul>
-            </div>
+        <div class="row">
+            <ul class="list-inline">
+                <li class="co2-md-2 col-sm-2 col-xs-2 text-right">
+                    <img src="img/logo2.png" alt="logotype" class="img-responsive2 center-block">
+                </li>
+                <li class="col-md-2 col-sm-2 col-xs-2 col-sm-offset-8 col-xs-offset-8 col-md-offset-8 text-center">
+                    <h5>
+                        <a href="#">Информация
+                        </a>
+                    </h5>
+                </li>
+            </ul>
         </div>
-    </nav>
+</nav>
 
     <section id="main">
         <div class="сontainer text-center">
@@ -70,21 +79,15 @@
                         <input type="submit" value="Пацвердзіць" required placeholder="Найти">
                     </div>
                 </form>
-                <div class="row">
-                    <img src="img/logo.png" alt="logotype" class="img-responsive center-block">
-                </div>
             </div>
             <div id="map"></div>
         </div>
     </section>
 
-    <footer id="contacts">
-        <div class="container text-center">
 
-        </div>
-    </footer>
 
-</div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -107,6 +110,13 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/wow.min.js"></script>
+
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+
+
 <script>
     new WOW().init();
 </script>
@@ -117,12 +127,12 @@
         }
     );
 </script>
-<script>
+  <script>
     $(window).on('load', function () {
-        $preloader = $('.loaderArea'),
-            $loader = $preloader.find('.loader');
+        $preloader = $('.large-header'),
+            $loader = $preloader.find('.demo-canvas');
         $loader.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
+        $preloader.delay(2).fadeOut('slow');
     });
 </script>
 
