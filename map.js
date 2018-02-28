@@ -1,13 +1,13 @@
 function setMapMarkerByCoordinates(width, longitude, id) {
-    let image = {
-        url: 'img/map-marker.png',
-        scaledSize: new google.maps.Size(45, 60),
-        origin: new google.maps.Point(0,0), // origin
-        anchor: new google.maps.Point(0, 0) // anchor
-    };
+    // let image = {
+    //     url: 'img/map-marker.png',
+    //     scaledSize: new google.maps.Size(45, 60),
+    //     origin: new google.maps.Point(0,0), // origin
+    //     anchor: new google.maps.Point(0, 0) // anchor
+    // };
     let map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 53.898386, lng: 27.536495},
-        zoom: 16,
+        zoom: 14,
         styles: [
 
             {
@@ -214,7 +214,7 @@ function setMapMarkerByCoordinates(width, longitude, id) {
     longitude = parseFloat(longitude);
     let marker = new google.maps.Marker({
         position: {lat: width, lng: longitude},
-        icon: image
+        // icon: image
     });
 
      marker.setMap(map);
